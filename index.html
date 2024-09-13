@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sryle.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="loan_form">
+        <h1>LOAN FORM</h1>
+    </div>
+    <form id="form">
+        <div class="nav_1">
+            <div>
+                <img src="download.png" alt="" class="image">
+            </div>
+           <div class="background">
+               <div class="flex">
+                   <div>
+                    <div>
+                        <div><p class="span_9">First Name</p></div>
+                        <input type="text" id="name" class="input_1" placeholder="First_Name">
+                           <div> <span id="aErr" class="span_color"></span> </div>                               
+
+                    </div>
+                        
+                        
+                        <div>
+                           <div><p class="span_9">Current amount in account</p></div>
+                            <input type="number" class="input_9" name="" id="current" placeholder="Current amount in account">
+                         <div>   <span id="bErr" class="span_color"></span> </div>                               
+
+                        </div>
+                       
+                       
+                        <div>
+                            <div><p class="span_9">Loan amount</p></div>
+                            <input type="number" class="input_2" id="loan" placeholder="Loan amount">
+                            <div><span id="cErr" class="span_color"></span>    </div>                        
+
+                        </div>
+                        
+                        
+                        
+                        <div>
+                            <div><p class="span_9">Credit History</p></div>
+                            <select id="credit" class="input_3">
+                                <option value=""> credit history</option>
+                                <option value="1">1 month</option>
+                                <option value="2">2 month</option>
+                                <option value="3">3 month</option>
+                                <option value="4">4 month</option>
+                                <option value="5">5 month</option>
+                                <option value="6">6 month</option>
+                                <option value="7">7 month</option>
+                                <option value="8">8 month</option>
+                                <option value="9">9 month</option>
+                                <option value="10">10 month</option>
+                                <option value="11">11 month</option>
+                                <option value="12">12 month</option>
+                            </select>
+                           <div> <span id="dErr" class="span_color"></span></div>
+                        </div>
+                       
+                       
+                        <div>
+                            <div><p class="span_9">Last deposit date</p></div>
+                            <input type="text" class="input_4" id="date" placeholder="last deposit date">
+                            <div><span id="eErr" class="span_color"></span></div>
+                        </div>
+
+                   </div>
+                   
+                   
+                    <div>
+                        
+                        <div>
+                            <div><p class="span_9">Last Name</p></div>
+                            <input type="text" name="" id="name2" class="input_5" placeholder="Last Name">
+                           <div> <span id="fErr" class="span_color"></span></div>
+                        </div>
+                       
+                       
+                        <div>
+                            <div><p class="span_9">Last loan Collection Date</p></div>
+                            <select id="collection" class="input_6">
+                                <option value="">Last Collection Loan Date</option>
+                                <option value="1">1 month</option>
+                                <option value="2">2 month</option>
+                                <option value="3">3 month</option>
+                                <option value="4">4 month</option>
+                                <option value="5">5 month</option>
+                                <option value="6">6 month</option>
+                                <option value="7">7 month</option>
+                                <option value="8">8 month</option>
+                                <option value="9">9 month</option>
+                                <option value="10">10 month</option>
+                                <option value="11">11 month</option>
+                                <option value="12">12 month</option>
+                            </select>
+                          <div>  <span id="gErr" class="span_color"></span></div>
+                        </div>
+                       
+                       
+                       
+                        <div>
+                            <div><p class="span_9">Repayment period</p></div>
+                            <select id="repayment" class="input_7">
+                                <option value="">Loan Repayment Period</option>
+                                <option value="1">1 month</option>
+                                <option value="2">2 month</option>
+                                <option value="3">3 month</option>
+                                <option value="4">4 month</option>
+                                <option value="5">5 month</option>
+                                <option value="6">6 month</option>
+                                <option value="7">7 month</option>
+                                <option value="8">8 month</option>
+                                <option value="9">9 month</option>
+                                <option value="10">10 month</option>
+                                <option value="11">11 month</option>
+                                <option value="12">12 month</option>
+                            </select>
+                            <div><span id="hErr" class="span_color"></span></div>
+                        </div>
+                        
+                        
+                        <div>
+                            <div><p class="span_9">Account type</p></div>
+                            <select id="Account_type" class="input_8">
+                                <option value="">Account Operated type</option>
+                                <option value="1">Current</option>
+                                <option value="2">Savings</option>
+                            </select>
+                         <div>  <span id="jErr" class="span_color"></span></div>
+                        </div>
+
+
+                    </div>
+               </div>
+               <button id="btn" class="button" type="button" onclick="getloan()">Submit</button>
+              <div> <p id="span" class="last_span"></p></div>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
